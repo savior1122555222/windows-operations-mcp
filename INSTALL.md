@@ -31,7 +31,7 @@ just web         # start the frontend (if applicable)
 
 If you prefer not to use `just`:
 
-1. Install [Python 3.13+](https://python.org) and [uv](https://docs.astral.sh/uv/)
+1. Install [Python 3.12+](https://python.org) and [uv](https://docs.astral.sh/uv/)
 2. Clone and enter the repo:
    ```powershell
    git clone https://github.com/sandraschi/windows-operations-mcp
@@ -44,7 +44,7 @@ If you prefer not to use `just`:
 4. Start the server:
    ```powershell
    # stdio mode (for MCP clients like Claude Desktop)
-   uv run python -m windows_operations_mcp.server
+   uv run python -m windows_operations_mcp
 
    # HTTP mode (for web dashboard)
    uv run uvicorn windows_operations_mcp.server:app --port 10748
